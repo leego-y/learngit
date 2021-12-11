@@ -20,6 +20,11 @@ git config --global user.name “yourname”
 git config --global user.email “yourname”
 ssh-keygen -t rsa -C   一路下去创建本机的ssh
 clip < ~/.ssh/id_rsa.pub  直接复制会破坏格式
-ssh -T git@github.com
+ssh -T git@github.com  测试连接是否成功
 ssh-agent -s
 ssh-add ~/.ssh/id_rsa 
+git remote add origin git@github.com:leego-y/learngit.git   与远程库进行关联
+git push -u origin master 推送分支所有内容
+git push origin master 每次commit 之后都最好提交一次
+git remote -v 查看远程库信息
+git remote rm origin 解除与远程库的关联
