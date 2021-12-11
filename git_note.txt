@@ -4,3 +4,7 @@ git commit -m "shenmedongxi"
 git log 
 git log --pretty=oneline
 cat readme.txt
+git reset --hard HEAD^
+git reset --hard 9a641
+git reflog
+git reset HEAD readme.txt
