@@ -12,3 +12,14 @@ git diff readme.txt
 git diff
 git rm test.txt
 git commit -m "remove test.txt"
+git remote rm origin
+git config --global --list
+git config --global user.name
+git config --global user.email
+git config --global user.name “yourname”
+git config --global user.email “yourname”
+ssh-keygen -t rsa -C   一路下去创建本机的ssh
+clip < ~/.ssh/id_rsa.pub  直接复制会破坏格式
+ssh -T git@github.com
+ssh-agent -s
+ssh-add ~/.ssh/id_rsa 
