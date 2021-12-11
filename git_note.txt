@@ -28,3 +28,4 @@ git push -u origin master 推送分支所有内容
 git push origin master 每次commit 之后都最好提交一次
 git remote -v 查看远程库信息
 git remote rm origin 解除与远程库的关联
+git clone git@github.com:leego-y/gitskills.git  复制远程库
