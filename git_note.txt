@@ -2,4 +2,4 @@ git init
 git add wenjianming
 git commit -m "   "
 git log 
-git log pretty==oneline
+git log --pretty=oneline
