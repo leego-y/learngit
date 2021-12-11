@@ -10,3 +10,5 @@ git reflog
 git reset HEAD readme.txt
 git diff readme.txt
 git diff
+git rm test.txt
+git commit -m "remove test.txt"
