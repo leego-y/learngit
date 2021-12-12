@@ -7,7 +7,10 @@ cat readme.txt
 git reset --hard HEAD^
 git reset --hard 9a641
 git reflog
-git reset HEAD readme.txt
+git reset HEAD readme.txt  可以把暂存区的修改撤销掉
+git checkout -- readme.txt  丢弃工作区的修改  如果有add 则恢复到暂存区  如果没有则退回到master 分支
+git checkout HEAD readme.txt
+git diff HEAD -- readme.txt
 git diff readme.txt
 git diff
 git rm test.txt
