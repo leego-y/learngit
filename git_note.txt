@@ -8,6 +8,9 @@ git reset --hard HEAD^
 git reset --hard 9a641
 git reflog
 git reset HEAD readme.txt  可以把暂存区的修改撤销掉
+git checkout readme.txt
+文件名称前面有两个横杠，并且中间采用空格分隔（否则报错）。此种方式可以防止Git出现误判，
+加入暂存区有一个文件名为ant（没有后缀名），恰好当前项目也有有个名为ant的分支，这个时候Git会优先将ant当做分支处理，于是就有可能导致错误
 git checkout -- readme.txt  丢弃工作区的修改  如果有add 则恢复到暂存区  如果没有则退回到master 分支
 git checkout HEAD readme.txt
 git diff HEAD -- readme.txt
@@ -32,3 +35,7 @@ git push origin master 每次commit 之后都最好提交一次
 git remote -v 查看远程库信息
 git remote rm origin 解除与远程库的关联
 git clone git@github.com:leego-y/gitskills.git  复制远程库
+git checkout -b dev  即创建又切换
+git branch dev 创建
+git checkout dev 切换
+git branch
