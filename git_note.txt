@@ -26,7 +26,7 @@ git config --global --list
 git config --global user.name
 git config --global user.email
 git config --global user.name “yourname”
-git config --global user.email “yourname”
+git config --global user.email “youremail”
 ssh-keygen -t rsa -C   一路下去创建本机的ssh
 clip < ~/.ssh/id_rsa.pub  直接复制会破坏格式
 ssh -T git@github.com  测试连接是否成功
