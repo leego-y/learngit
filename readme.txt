@@ -13,4 +13,8 @@ Creating a new branch is quick & simple.
 Creating a new branch is quick AND simple
 >>>>>>> feature1
 fen zhi guanli celue
+<<<<<<< HEAD
 master fenzhi
+=======
+dec branch
+>>>>>>> dev
