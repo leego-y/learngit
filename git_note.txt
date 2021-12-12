@@ -47,3 +47,4 @@ git branch
 git merge dev
 git branch -d dev  删除分支
 git log --graph  分支合并图
+git merge --no-ff -m "merge with no-ff" dev
