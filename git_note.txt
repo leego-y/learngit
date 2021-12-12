@@ -46,3 +46,4 @@ git switch dev
 git branch
 git merge dev
 git branch -d dev  删除分支
+git log --graph  分支合并图
