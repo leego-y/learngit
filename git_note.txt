@@ -13,6 +13,9 @@ git checkout readme.txt
 加入暂存区有一个文件名为ant（没有后缀名），恰好当前项目也有有个名为ant的分支，这个时候Git会优先将ant当做分支处理，于是就有可能导致错误
 git checkout -- readme.txt  丢弃工作区的修改  如果有add 则恢复到暂存区  如果没有则退回到master 分支
 git checkout HEAD readme.txt
+git restore --worktree readme.txt  从master恢复工作区内容  船新版本
+git restore --staged readme.txt  从master恢复暂存区
+git restore --source=HEAD --staged --worktree readme.txt
 git diff HEAD -- readme.txt
 git diff readme.txt
 git diff
@@ -38,4 +41,8 @@ git clone git@github.com:leego-y/gitskills.git  复制远程库
 git checkout -b dev  即创建又切换
 git branch dev 创建
 git checkout dev 切换
+git switch -c dev 新的切换命令更加科学 创建并切换分支
+git switch dev     
 git branch
+git merge dev
+git branch -d dev  删除分支
