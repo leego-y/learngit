@@ -16,6 +16,17 @@ fen zhi guanli celue
 shi shenme dongxi
 shenme dongxi
 zhe cishiyan  123
+<<<<<<< HEAD
 sudo 
 asdasda
 自己提交的
+=======
+xiu fu bug
+git log 
+<<<<<<< HEAD
+dev2
+=======
+123
+>>>>>>> dev
+另一个伙伴提交的
+>>>>>>> 590662c7b2bdde28cc6ab86fb0022b699553e7e9
