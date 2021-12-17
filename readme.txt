@@ -14,3 +14,4 @@ Creating a new branch is quick AND simple
 >>>>>>> feature1
 fen zhi guanli celue
 shi shenme dongxi
+shenme dongxi
