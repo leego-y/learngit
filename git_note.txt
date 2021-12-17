@@ -48,3 +48,8 @@ git merge dev
 git branch -d dev  删除分支
 git log --graph  分支合并图
 git merge --no-ff -m "merge with no-ff" dev
+git stash  保存分支的工作现场
+git stash list  查看保存的工作现场
+git stash apply 9ad0c  恢复工作现场
+git stash drop 手动删除工作现场
+git stash pop 恢复工作现场  并删除
