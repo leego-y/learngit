@@ -18,4 +18,8 @@ shenme dongxi
 zhe cishiyan  123
 xiu fu bug
 git log 
+<<<<<<< HEAD
 dev2
+=======
+123
+>>>>>>> dev
