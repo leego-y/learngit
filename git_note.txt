@@ -22,7 +22,8 @@ git diff readme.txt
 git diff
 git rm test.txt
 git commit -m "remove test.txt"
-git remote rm origin
+git remote rm origin 删除与远程库的关联
+git remote add origin git@github.com:leego-y/learngit.git   与远程库进行关联
 git config --global --list
 git config --global user.name
 git config --global user.email
@@ -33,7 +34,6 @@ clip < ~/.ssh/id_rsa.pub  直接复制会破坏格式
 ssh -T git@github.com  测试连接是否成功
 ssh-agent -s
 ssh-add ~/.ssh/id_rsa 
-git remote add origin git@github.com:leego-y/learngit.git   与远程库进行关联
 git push -u origin master 推送分支所有内容
 git push origin master 每次commit 之后都最好提交一次
 git remote -v 查看远程库信息
@@ -69,3 +69,22 @@ git tag -d v1.0 删除标签
 git push origin v1.0
 git push origin --tags
 git tag -d v0.8  git push origin :refs/tags/v0.8
+.gitignore 配置忽略文件   
+*.so
+*.egg
+*.egg-info   字符串匹配忽略某些文件
+！.gitignore
+!App.class
+git add App.class   The following paths are ignored by one of your .gitignore files:
+git add -f App.class
+git check-ignore -v App.class  查看规则为什么会忽略这个文件
+
+git config --global alias.st status  配置别名
+git config --global alias.ci commit 
+git config --global alias.br branch
+git log -1  最后一次提交
+git config --global alias.last 'log -1'
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+--global 是针对当前用户起作用 如果不加那只对当前仓库起作用
+cat .git/config 查看当前仓库的设置
+git .gitconfig 用户主目录下的文件  
