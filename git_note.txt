@@ -62,5 +62,5 @@ git push origin <branch-name>
 git merge    git rebase   rebase 相当于把dev分支与master分支之前的每一次提交进行cherry-pick 然后再合并到master上
 git tag v1.0 默认是最新版本打标签
 git tag v0.8 cf810 给之前的版本打标签
-git show 查看所有的标签
-git show v0.8
+git tag  查看所有的标签
+git show 0.9
