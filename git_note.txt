@@ -70,6 +70,7 @@ git push origin v1.0
 git push origin --tags
 git tag -d v0.8  git push origin :refs/tags/v0.8
 .gitignore 配置忽略文件   
+https://github.com/github/gitignore  配置网址
 *.so
 *.egg
 *.egg-info   字符串匹配忽略某些文件
@@ -78,7 +79,6 @@ git tag -d v0.8  git push origin :refs/tags/v0.8
 git add App.class   The following paths are ignored by one of your .gitignore files:
 git add -f App.class
 git check-ignore -v App.class  查看规则为什么会忽略这个文件
-
 git config --global alias.st status  配置别名
 git config --global alias.ci commit 
 git config --global alias.br branch
