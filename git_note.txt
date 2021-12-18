@@ -3,6 +3,7 @@ git add readme.txt
 git commit -m "shenmedongxi"
 git log 
 git log --pretty=oneline
+git log --graph --pretty=oneline --abbrev-commit
 cat readme.txt
 git reset --hard HEAD^
 git reset --hard 9a641
@@ -55,6 +56,6 @@ git stash drop 手动删除工作现场
 git stash pop 恢复工作现场  并删除
 git cherry-pick 4c805e2  master修复bug 合并到dev上
 git branch -c dev origin/dev  本地clone时只有master,没有dev  获取远程的dev 
-git pull 远程拉取此分支
+git pull 远程拉取此分支 相当于git fetch + git merge
 git branch --set-upstream-to <branch-name> origin/<branch-name>  本地分支与远程分支的链接创建关联
 git push origin <branch-name>
